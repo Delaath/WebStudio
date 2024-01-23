@@ -1,7 +1,213 @@
 :root{
-    --link-color:#2196F3;
-    --text-color:#757575;
-    --tytle-color:#212121;
-    --adress-color:#FFF;
-    --info-color:rgba(255, 255, 255, 0.60);
+    --header-background-color:#FFFFFF;
+    --first-logo-color:#2196F3;
+    --second-logo-color:#000;
+    --header-text-color:#212121;
+    --link-hover-color:#2196F3;
+    --telephone-nav-color:#757575;
+
+    --main-background-color:#212121;
+    --title-color:#FFFFFF;
+    --button-background-color:#2196F3;
+    --button-color:#FFFFFF;
+    --cotent-title-color:#212121;
+    --content-subtitle-color:#757575;
+    --main-second-background-color:#F5F4FA;
+
+    --footer-bacground-color:#2F303A;
+    --footer-nav-color:#2F303A;
+}
+/* ======================HEADER=============================== */
+ul{
+    list-style: none;
+}
+
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Raleway;
+    letter-spacing: 0.78px;
+}
+.first-logo{
+    color: var(--first-logo-color);
+}
+.second-logo{
+    color: var(--second-logo-color);
+}
+
+.header-list-item > a{
+    color: var(--header-text-color);
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-list-item{
+    display: inline;
+}
+
+.header-list-item > a:hover{
+    color: var(--link-hover-color);
+}
+
+.header-nav > .header-nav-item{
+    display: inline;
+}
+
+.header-nav-item > a{
+    color: var(--telephone-nav-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.header-nav-item > a:hover{
+    color: var(--link-hover-color);
+}
+
+/* =========================MAIN================================ */
+
+.main-section{
+    background-color: var(--main-background-color);
+}
+
+.main-section-title{
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+
+.main-button{
+    color: var(--button-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.item-title{
+    color: var(--cotent-title-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.item-subtitle{
+    color: var(--content-subtitle-color);
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.affairs-title{
+    color: var(--cotent-title-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    text-align: center;
+}
+
+.affairs-img{
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    
+}
+
+.team{
+    background-color: var(--main-second-background-color);
+}
+
+.team-title{
+    color: var(--cotent-title-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    text-align: center;
+}
+
+.team-list-item{
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+}
+
+.team-img{
+    background: url(<path-to-image>), lightgray -86.437px -3.457px / 196.208% 136.002% no-repeat;   
+}
+
+.team-list-title{
+    color: var(--cotent-title-color);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+}
+
+.team-list-subtitle{
+    color: var(--content-subtitle-color);
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+}
+
+footer{
+    background-color: var(--footer-bacground-color);
+}
+
+footer > a{
+    text-decoration: none;
+}
+
+.footer-logo-first{
+    color: var(--first-logo-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+
+.footer-logo-second{
+    color: #FFF;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+
+.footer-adress > a{
+    color: #FFF;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration: none;
+}
+
+.footer-nav > a{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    text-decoration: none;
 }

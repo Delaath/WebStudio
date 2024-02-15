@@ -7,32 +7,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header container">
         <a href="/" class="logo"><spa class="first-logo">Web</spa><span class="second-logo">Studio</span></a>
         <nav>
-            <ul class="header-list">
-                <li class="header-list-item"><a href="#">Студія</a></li>
-                <li class="header-list-item"><a href="#">Портфоліо</a></li>
-                <li class="header-list-item"><a href="#">Контакти</a></li>
-            </ul>
-
-            <ul class="header-nav">
-                <li class="header-nav-item"><a href="mailto:">info@devStudio.com</a></li>
-                <li class="header-nav-item"><a href="tel:+">+380961111111</a></li>
+            <ul class="header-list-nav">
+                <li class="header-list-item-nav"><a href="#">Студія</a></li>
+                <li class="header-list-item-nav"><a href="#">Портфоліо</a></li>
+                <li class="header-list-item-nav"><a href="#">Контакти</a></li>
             </ul>
         </nav>
+            
+            <ul class="header-list-contact">
+                <li class="header-contact-item"><a href="mailto:">info@devStudio.com</a></li>
+                <li class="header-contact-item"><a href="tel:+">+380961111111</a></li>
+            </ul>
     </header>
     
     <main>
-        <section class="main-section">
-            <h1 class="main-section-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="main-button">ЗАМОВИТИ ПОСЛУГУ</button>
+        <section class="main-section ">
+            <h1 class="main-section-title container">Ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="main-button container">Замовити послугу</button>
         </section>
         
-        <section>    
+        <section class="info-section container">    
             <ul class="items">
                 <li class="items-item">
                     <h3 class="item-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -65,14 +66,14 @@
             </ul>
         </section>
 
-        <section class="affairs">
+        <section class="affairs container">
             <h2 class="affairs-title">Чим ми займаємося</h2>
             <img src="./img/img-1.jpg" alt="komputer" width="370" height="294" class="affairs-img">
             <img src="./img/img-2.jpg" alt="phone" width="370" height="294" class="affairs-img">
             <img src="./img/img.jpg" alt="tablet" width="370" height="294" class="affairs-img">
         </section>
 
-        <section class="team">
+        <section class="team container">
             <h2 class="team-title">НАША КОМАНДА</h2>
             
             <ul class="team-list">

@@ -121,6 +121,7 @@ body{
     text-align: center;
 
     display: flex;
+    align-items: center;
 }
 
 .main-button{
@@ -136,9 +137,11 @@ body{
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     
-    display: block;
-    padding: 10px 32px;
+    display: flex;
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    
 
     width: 216px;
     height: 50px;
@@ -150,13 +153,15 @@ body{
     font-size: 14px;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    display: block;
+    text-align: left;
 }
 
 .items{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 25px 0; */
+    padding: 25px 0;
 
     margin: 94px 0;
 }
@@ -181,11 +186,7 @@ body{
     letter-spacing: 0.42px;
 }
 
-.affairs{
-
-}
-
-.affairs-title{
+.affairs-title {
     color: var(--cotent-title-color);
     font-weight: 700;
     font-size: 36px;
@@ -195,19 +196,15 @@ body{
     margin-bottom: 50px;
 }
 
-.affairs-img{
+.affairs-img {
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     display: inline-flex;
     justify-content: space-between;
 }
 
-.affairs-img:last-child{
-
-}
-
-.team{
+.team {
     background-color: var(--main-second-background-color);
-    padding: 324px 668px;
+    margin-top: 94px;
 }
 
 .team-title{
@@ -216,13 +213,18 @@ body{
     font-size: 36px;
     letter-spacing: 1.08px;
     text-align: center;
+
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .team-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 30px;
+
+    padding-bottom: 94px;
 }
 
 .team-list-item{
@@ -233,6 +235,7 @@ body{
 
 .team-img{
     background: url(<path-to-image>), lightgray -86.437px -3.457px / 196.208% 136.002% no-repeat;   
+    margin-bottom: 30px;
 }
 
 .team-list-title{
@@ -240,6 +243,9 @@ body{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.48px;
+    text-align: center;
+
+    padding-bottom: 10px;
 }
 
 .team-list-subtitle{
@@ -247,12 +253,22 @@ body{
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.48px;
+    text-align: center;
+
+    padding-bottom: 30px;
 }
 
 /* ================FOOTER==================== */
 
 footer{
     background-color: var(--footer-bacground-color);
+}
+
+.footer-logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    display: flex;
 }
 
 .footer-logo-first{
@@ -271,18 +287,27 @@ footer{
     letter-spacing: 0.78px;
 }
 
-.footer-adress > a{
+.footer-adress {
     color: #FFF;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.42px;
+
+    display: flex;
 }
 
-.footer-nav > a{
+.footer-nav {
     color: rgba(255, 255, 255, 0.60);
     font-weight: 400;
     line-height: 24px;
     font-size: 14px;
     letter-spacing: 0.42px;
+
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.footer-nav:nth-child(2){
+    padding-bottom: 0;
 }

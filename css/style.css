@@ -112,6 +112,20 @@ body{
     padding: 300px 452px 300px 452px;
 }
 
+.section-title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    vertical-align: baseline;
+
+}
+
+.busines{
+    display: flex;
+    justify-content: center;
+    padding-right: 58px;
+}
+
 .main-section-title{
     color: var(--title-color);
 
@@ -120,11 +134,14 @@ body{
     line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    text-align: center;
 
-    display: flex;
-    align-items: center;
     width: 696px;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
 }
 
 .main-button{
@@ -140,11 +157,7 @@ body{
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     
-    display: flex;
     margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-    
 
     width: 216px;
     height: 50px;

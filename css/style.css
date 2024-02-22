@@ -54,7 +54,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     border-bottom: solid 1px #ECECEC;
 }
@@ -109,7 +110,7 @@ body{
 
 .main-section{
     background: #2F303A;
-    padding: 300px 452px 300px 452px;
+    padding: 300px 0 300px 0;
 }
 
 .main-section-title{
@@ -164,7 +165,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     margin: 94px 0;
 }

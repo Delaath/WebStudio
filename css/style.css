@@ -187,17 +187,17 @@ body{
 }
 
 .items-item:nth-child(1):before {
-    background-image: url('/img/antenna.svg');
+    background-image: url('./img/antenna.svg');
 }
 
 .items-item:nth-child(2):before {
-    background-image: url('/img/clock.svg');
+    background-image: url('./img/clock.svg');
 }
 .items-item:nth-child(3):before {
-    background-image: url('/img/diagram.svg');
+    background-image: url('./img/diagram.svg');
 }
 .items-item:nth-child(4):before {
-    background-image: url('/img/astronaut.svg');
+    background-image: url('./img/astronaut.svg');
 }
 
 .items-item:last-child{

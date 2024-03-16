@@ -108,12 +108,8 @@ body{
 
 .main-section{
     content: '';
-    background-image: url('../img/hero-bg.jpg'),
-                      linear-gradient(
-                      to top,
-                      rgba(47, 48, 58, 0.4),
-                      rgba(47, 48, 58, 0.4)
-    );
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                      url(../img/hero-bg.jpg);
     background-size: cover;
     padding: 300px 0 300px 0;
 }
@@ -222,6 +218,10 @@ body{
     letter-spacing: 0.42px;
 }
 
+.affairs{
+    padding: 0;
+}
+
 .affairs-title {
     color: var(--cotent-title-color);
     font-weight: 700;
@@ -235,7 +235,11 @@ body{
 .affairs-img {
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     display: inline-flex;
-    justify-content: space-between;
+    margin-right: 26px;
+}
+
+.affairs-img:last-child{
+    margin-right: 0;
 }
 
 .team {

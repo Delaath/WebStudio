@@ -99,9 +99,37 @@ hr{
     color: var(--link-hover-color);
 }
 
-.header-list-contact{
+.header-list-contact {
     display: flex;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-svg {
+    position: relative;
+    top: 1px;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: rgba(117, 117, 117, 1);
+}
+
+.contact-svg:hover{
+    fill: #2196F3;
+}
+
+.contact-svg-2 {
+    position: relative;
+    top: 3px;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: rgba(117, 117, 117, 1);
+}
+
+.contact-svg-2:hover{
+    fill: #2196F3;
 }
 
 .header-contact-item{
@@ -236,8 +264,40 @@ p{
 
 /* ================================== FOOTER ====================================== */
 
-footer{
+footer {
     background-color: var(--footer-bacground-color);
+}
+
+.footer-div {
+    display: flex;
+}
+
+.footer-div-2 {
+    width: 250px;
+    margin-right: 30px;
+}
+
+.team-list-svg-2 {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.team-svg-2 {
+    fill: rgba(175, 177, 184, 1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.10);
+    ;
+}
+
+.team-svg-2:hover {
+    background-color: rgba(33, 150, 243, 1);
+    fill: rgba(255, 255, 255, 1);
 }
 
 .footer-logo {
@@ -247,7 +307,7 @@ footer{
     display: flex;
 }
 
-.footer-logo-first{
+.footer-logo-first {
     color: var(--first-logo-color);
     font-family: Raleway;
     font-weight: 700;
@@ -255,7 +315,7 @@ footer{
     letter-spacing: 0.78px;
 }
 
-.footer-logo-second{
+.footer-logo-second {
     color: #FFF;
     font-family: Raleway;
     font-weight: 700;
@@ -281,9 +341,25 @@ footer{
     letter-spacing: 0.42px;
 
     display: flex;
-    padding-bottom: 60px;
+    padding-bottom: 63px;
 }
 
-.footer-nav:nth-child(2){
+.footer-nav:nth-child(2) {
     padding-bottom: 0;
+}
+
+.footer-div-3 {
+    margin-top: 60px;
+}
+
+.social-title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
 }

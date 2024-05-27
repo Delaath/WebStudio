@@ -106,6 +106,34 @@ body {
 .header-list-contact {
     display: flex;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-svg {
+    position: relative;
+    top: 1px;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: rgba(117, 117, 117, 1);
+}
+
+.contact-svg:hover{
+    fill: #2196F3;
+}
+
+.contact-svg-2 {
+    position: relative;
+    top: 3px;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: rgba(117, 117, 117, 1);
+}
+
+.contact-svg-2:hover{
+    fill: #2196F3;
 }
 
 .header-contact-item {
@@ -405,16 +433,17 @@ footer {
     padding-bottom: 40px;
 }
 
-.team-svg-2{
+.team-svg-2 {
     fill: rgba(175, 177, 184, 1);
     border-radius: 50%;
     width: 40px;
     height: 40px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.10);;
+    background-color: rgba(255, 255, 255, 0.10);
+    ;
 }
 
-.team-svg-2:hover{
+.team-svg-2:hover {
     background-color: rgba(33, 150, 243, 1);
     fill: rgba(255, 255, 255, 1);
 }

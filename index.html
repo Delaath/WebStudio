@@ -30,8 +30,12 @@
         </nav>
 
         <ul class="header-list-contact">
-            <li class="header-contact-item"><a href="mailto:"><svg class="contact-svg"><use href="./img/symbol-defs.svg#icon-envelope-hover"></use></svg>info@devStudio.com</a></li>
-            <li class="header-contact-item"><a href="tel:+"><svg class="contact-svg-2"><use href="./img/symbol-defs.svg#icon-smartphone"></use></svg>+380961111111</a></li>
+            <li class="header-contact-item"><a href="mailto:"><svg class="contact-svg">
+                        <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+                    </svg>info@devStudio.com</a></li>
+            <li class="header-contact-item"><a href="tel:+"><svg class="contact-svg-2">
+                        <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>+380961111111</a></li>
         </ul>
 
     </header>
@@ -39,7 +43,55 @@
     <main>
         <section class="main-section ">
             <h1 class="main-section-title container">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="main-button container">Замовити послугу</button>
+            <button class="btn-open container" data-open-modal>Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <div class="close-div"><button class="btn" data-close-modal><svg class="close-svg">
+                                <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                            </svg></button></div>
+                    <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+                    <form class="modal-form">
+                        <label class="modal-lable-text">
+                            Ім'я
+                            <input type="text" name="text" class="input" required minlength="2" maxlength="20"
+                                pattern="[A-Za-zА-Яа-яЁё\s]+" title="Тільки літери і пробіли" required autofocus>
+                            <svg class="input-svg">
+                                <use href="./img/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                            </svg>
+                        </label>
+
+                        <label class="modal-lable-namber">
+                            Телефон
+                            <input type="number" name="number" minlength="7" maxlength="15" class="input"
+                                pattern="\+?[0-9\s\-()]{7,15}"
+                                title="Номер телефону може содержати від 7 до 15 цифр, пробіли, тіре, дужки і може починатись з +"
+                                required>
+                            <svg class="input-svg-tel">
+                                <use href="./img/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                            </svg>
+                        </label>
+
+                        <label class="modal-lable-mail">
+                            Пошта
+                            <input type="email" name="email" class="input">
+                            <svg class="input-svg-email">
+                                <use href="./img/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                            </svg>
+                        </label>
+
+                        <label class="modal-lable-area">
+                            Коментар
+                            <textarea name="feedback" maxlength="300" rows="5" placeholder="Введіть текст"></textarea>
+                        </label>
+
+                        <label class="modal-lable-checkbox">
+                            <input type="checkbox" name="accept" value="accept" class="input-checkbox"/>
+                            Погоджуюся з розсилкою та приймаю <a href="#" class="link-checkbox">Умови договору</a>
+                        </label>
+                        <button type="submit" class="btn-form">Відправити</button>
+                    </form>
+                </div>
+            </div>
         </section>
 
         <section class="info-section container">
@@ -81,9 +133,9 @@
                 <img src="./img/img-1.jpg" alt="komputer" width="370" height="294" class="affairs-img">
                 <p class="affairs-img-text_1">Десктопні додатки</p>
                 <img src="./img/img-2.jpg" alt="phone" width="370" height="294" class="affairs-img">
-                <p class="affairs-img-text_2">Десктопні додатки</p>
+                <p class="affairs-img-text_2">Мобільні додатки</p>
                 <img src="./img/img-3.jpg" alt="tablet" width="370" height="294" class="affairs-img">
-                <p class="affairs-img-text_3">Десктопні додатки</p>
+                <p class="affairs-img-text_3">Дизайнерські рішення</p>
             </div>
         </section>
 
@@ -235,6 +287,7 @@
         </div>
 
     </footer>
+    <script src="/modal.js"></script>
 </body>
 
 </html>

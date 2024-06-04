@@ -293,7 +293,7 @@ body {
     letter-spacing: 0.12px;
 }
 
-.modal-lable-text:focus-within{
+.modal-lable-text:focus-within {
     fill: rgba(33, 150, 243, 1);
 }
 
@@ -309,7 +309,7 @@ body {
     letter-spacing: 0.12px;
 }
 
-.modal-lable-namber:focus-within{
+.modal-lable-namber:focus-within {
     fill: rgba(33, 150, 243, 1);
 }
 
@@ -325,7 +325,7 @@ body {
     letter-spacing: 0.12px;
 }
 
-.modal-lable-mail:focus-within{
+.modal-lable-mail:focus-within {
     fill: rgba(33, 150, 243, 1);
 }
 
@@ -353,6 +353,7 @@ body {
     margin-top: 5px;
     letter-spacing: 0.42px;
 }
+
 .input {
     width: 448px;
     height: 40px;
@@ -387,7 +388,7 @@ textarea {
     letter-spacing: 0.12px;
 }
 
-.input-checkbox{
+.input-checkbox {
     margin-right: 7px;
 }
 
@@ -813,5 +814,75 @@ footer {
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
+}
+
+.footer-div-4 {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-lable {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    margin-top: 20px;
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.btn-form-footer {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    transition: 0.2s ease;
+}
+
+.btn-form-footer:hover{
+    background-color: #1665a7;
+}
+
+.footer-form-svg {
+    width: 24px;
+    height: 24px;
+    fill: #FFF;
+    position: relative;
+    top: 5px;
+    left: 12px;
 }

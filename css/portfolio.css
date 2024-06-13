@@ -106,6 +106,22 @@ hr {
     font-size: 14px;
     letter-spacing: 0.28px;
     font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.header-list-item-nav::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background: #2196F3;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.header-list-item-nav:hover::after{
+    opacity: 1;
 }
 
 .header-list-item-nav:hover {
@@ -126,6 +142,7 @@ hr {
     height: 12px;
     margin-right: 10px;
     fill: rgba(117, 117, 117, 1);
+    transition: 0.2s ease;
 }
 
 .contact-svg:hover {
@@ -139,6 +156,7 @@ hr {
     height: 16px;
     margin-right: 10px;
     fill: rgba(117, 117, 117, 1);
+    transition: 0.2s ease;
 }
 
 .contact-svg-2:hover {
@@ -150,6 +168,7 @@ hr {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+    transition: 0.2s ease;
 }
 
 .header-contact-item:hover {
@@ -179,7 +198,7 @@ hr {
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.48px;
-
+    transition: 0.2s ease;
     padding: 6px 22px;
 }
 
@@ -211,6 +230,7 @@ hr {
 
 .main-item {
     border: 1px solid #EEE;
+    transition: 0.2s ease;
 }
 
 .main-item:hover {
@@ -253,9 +273,41 @@ hr {
     order: 9;
 }
 
-img {
+.img {
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     margin-bottom: 20px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.90);
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 500ms cubic-bezier(0.29, 0.48, 0.38, 0.97);
+}
+
+.box:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay-title {
+    width: 322px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    padding: 63px 24px;
 }
 
 h3 {
@@ -313,7 +365,7 @@ footer {
     height: 40px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.10);
-    ;
+    transition: 0.2s ease;
 }
 
 .team-svg-2:hover {

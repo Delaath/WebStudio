@@ -98,20 +98,38 @@ body {
     letter-spacing: 0.28px;
     font-weight: 500;
     transition: 0.2s ease;
+    position: relative;
 }
 
-.header-list-item-nav::after{
+.header-list-item-nav:nth-child(1) {
+    color: var(--link-hover-color);
+}
+
+.header-list-item-nav:nth-child(1)::after{
     content: "";
     display: block;
     width: 100%;
-    height: 3px;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.header-list-item-nav::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
     border-radius: 2px;
     background: #2196F3;
     opacity: 0;
-    transition: opacity .2s linear;
+    transition: opacity 0.2s linear;
+    top: 45px;
+    position: absolute;
 }
 
-.header-list-item-nav:hover::after{
+.header-list-item-nav:hover::after {
     opacity: 1;
 }
 
@@ -133,7 +151,7 @@ body {
     height: 12px;
     margin-right: 10px;
     fill: rgba(117, 117, 117, 1);
-    transition: 0.2s ease;
+    transition: fill 0.2s ease;
 }
 
 .contact-svg:hover {
@@ -147,6 +165,7 @@ body {
     height: 16px;
     margin-right: 10px;
     fill: rgba(117, 117, 117, 1);
+    transition: fill 0.2s ease;
 }
 
 .contact-svg-2:hover {
@@ -158,7 +177,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    transition: 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .header-contact-item:hover {
@@ -209,11 +228,12 @@ body {
     align-items: center;
     width: 216px;
     height: 50px;
-    transition: 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 .btn-open:hover {
     background-color: #1566a8;
+    
 }
 
 .backdrop {
@@ -222,13 +242,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
     opacity: 1;
+    transition: 0.5s ease;
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    transition: 0.5s ease;
 }
 
 .no-scroll {
@@ -270,7 +292,7 @@ body {
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
     padding: 6px;
-    transition: 0.1s ease;
+    transition: fill 0.1s ease;
 }
 
 .close-svg:hover {
@@ -306,6 +328,7 @@ body {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
+    transition: 0.3s ease;
 }
 
 .modal-lable-text:focus-within {
@@ -322,6 +345,7 @@ body {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
+    transition: 0.3s ease;
 }
 
 .modal-lable-namber:focus-within {
@@ -338,6 +362,7 @@ body {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
+    transition: 0.3s ease;
 }
 
 .modal-lable-mail:focus-within {
@@ -678,6 +703,7 @@ textarea {
     width: 37px;
     height: 37px;
     padding: 5px;
+    transition: background-color 0.2s ease, fill 0.2s ease;
 }
 
 
@@ -722,11 +748,11 @@ textarea {
     fill: rgba(175, 177, 184, 1);
     width: 160px;
     height: 85px;
+    transition: fill 0.2s ease, border 0.2s ease;
 }
 
 .clients-svg:hover {
     fill: #2196F3;
-    border-radius: 4px;
     border: 1px solid #2196F3;
 }
 
@@ -760,7 +786,7 @@ footer {
     height: 40px;
     padding: 6px;
     background-color: rgba(255, 255, 255, 0.10);
-    ;
+    transition: background-color 0.2s ease, fill 0.2s;
 }
 
 .team-svg-2:hover {
@@ -771,7 +797,7 @@ footer {
 .footer-logo {
     padding-top: 60px;
     padding-bottom: 20px;
-
+    padding-left: 15px;
     display: flex;
 }
 
@@ -889,7 +915,7 @@ footer {
     transition: 0.2s ease;
 }
 
-.btn-form-footer:hover{
+.btn-form-footer:hover {
     background-color: #1665a7;
 }
 

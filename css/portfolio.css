@@ -63,6 +63,7 @@ body {
 }
 
 
+
 /* ================================= HEADER ======================================== */
 
 .header {
@@ -305,7 +306,7 @@ hr {
     background-color: rgba(33, 150, 243, 0.90);
     top: 0;
     left: 0;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 500ms cubic-bezier(0.29, 0.48, 0.38, 0.97);
 }
 

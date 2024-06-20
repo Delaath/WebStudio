@@ -139,10 +139,6 @@ hr {
     position: absolute;
 }
 
-.header-list-item-nav:hover::after{
-    opacity: 1;
-}
-
 .header-list-item-nav:hover {
     color: var(--link-hover-color);
 }

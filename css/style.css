@@ -700,13 +700,37 @@ textarea {
     height: 37px;
     padding: 5px;
     transition: background-color 0.2s ease, fill 0.2s ease;
+
 }
 
+@keyframes team-svg{
+    0%{
 
+    }
+
+    25%{
+        transform: scale(0.80);
+        fill: rgb(38, 0, 175);
+    }
+
+    50%{
+        transform: translateY(-10px) perspective(600px) rotateY(360deg) scale(1.25);
+    }
+
+    100%{
+        
+    }
+}
 
 .team-svg:hover {
     background-color: rgba(33, 150, 243, 1);
     fill: rgba(255, 255, 255, 1);
+    animation-name: team-svg;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
 }
 
 .clients {
@@ -747,9 +771,33 @@ textarea {
     transition: fill 0.2s ease, border 0.2s ease;
 }
 
+@keyframes clients-svg{
+    0%{
+
+    }
+
+    25%{
+        transform: skewX(10deg) scale(0.80); 
+    }
+
+    50%{
+        transform: scale(1.10) translateY(-10px); fill:rgb(38, 0, 175);
+    }
+
+    75%{
+        
+    }
+}
+
 .clients-svg:hover {
     fill: #2196F3;
     border: 1px solid #2196F3;
+    animation-name: clients-svg;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+
 }
 
 /* ================FOOTER==================== */

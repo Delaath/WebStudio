@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --header-background-color: #FFFFFF;
     --first-logo-color: #2196F3;
     --second-logo-color: #000;
@@ -16,10 +16,10 @@
 
     --footer-bacground-color: #2F303A;
     --footer-nav-color: #2F303A;
-}
+} */
 
 /* =============================================== */
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -53,17 +53,17 @@ a {
 
 body {
     font-family: Roboto;
-}
+} */
 
-.container {
+/* .container {
     width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
-}
+} */
 
 /* ====================== HEADER =============================== */
 
-.header {
+/* .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -178,11 +178,11 @@ body {
 
 .header-contact-item:hover {
     color: var(--link-hover-color);
-}
+} */
 
 /* =========================MAIN================================ */
 
-.main-section {
+/* .main-section {
     content: '';
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/hero-bg.jpg);
@@ -203,11 +203,11 @@ body {
     display: flex;
     align-items: center;
     width: 696px;
-}
+} */
 
-/* ===============MODAL============== */
+/* ======================MODAL============== */
 
-.btn-open {
+/* .btn-open {
     color: var(--button-color);
     font-size: 16px;
     line-height: 30px;
@@ -481,9 +481,11 @@ textarea {
     margin-top: 30px;
     margin-left: 26%;
     border: none;
-}
+} */
 
-.item-title {
+/* ==================== list ==================== */
+
+/* .item-title {
     color: var(--cotent-title-color);
     font-weight: 700;
     font-size: 14px;
@@ -548,9 +550,11 @@ textarea {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.42px;
-}
+} */
 
-.affairs {
+/* ================= affairs ==================== */
+
+/* .affairs {
     padding: 0;
 }
 
@@ -626,9 +630,11 @@ textarea {
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
     overflow: hidden;
-}
+} */
 
-.team {
+/* ================== team ======================= */
+
+/* .team {
     background-color: var(--main-second-background-color);
     margin-top: 94px;
 }
@@ -731,9 +737,11 @@ textarea {
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
 
-}
+} */
 
-.clients {
+/* =================== clients =================== */
+
+/* .clients {
     background-color: #FFF;
 }
 
@@ -798,11 +806,11 @@ textarea {
     animation-direction: alternate;
     animation-timing-function: ease;
 
-}
+} */
 
 /* ================FOOTER==================== */
 
-footer {
+/* footer {
     background-color: var(--footer-bacground-color);
 }
 
@@ -970,4 +978,4 @@ footer {
     position: relative;
     top: 5px;
     left: 12px;
-}
+} */

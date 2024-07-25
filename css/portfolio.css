@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --header-background-color: #FFFFFF;
     --first-logo-color: #2196F3;
     --second-logo-color: #000;
@@ -16,10 +16,10 @@
 
     --footer-bacground-color: #2F303A;
     --footer-nav-color: #2F303A;
-}
+} */
 
 /* ===================================================================================== */
-
+/* 
 *,
 *::before,
 *::after {
@@ -62,11 +62,11 @@ body {
     padding: 0 15px;
 }
 
-
+ */
 
 /* ================================= HEADER ======================================== */
 
-.header {
+/* .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,7 +75,7 @@ body {
     border-bottom: solid 1px #ECECEC;
 }
 
-hr {
+ hr {
     background: #ECECEC;
     margin-top: 0;
     margin-bottom: 0;
@@ -188,11 +188,11 @@ hr {
 
 .header-contact-item:hover {
     color: var(--link-hover-color);
-}
+} */
 
 /* ==================================== MAIN ======================================= */
 
-.nav-list {
+/* .nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,11 +345,11 @@ p {
 
     margin-bottom: 20px;
     margin-left: 24px;
-}
+} */
 
 /* ================================== FOOTER ====================================== */
 
-footer {
+/* footer {
     background-color: var(--footer-bacground-color);
 }
 
@@ -517,4 +517,4 @@ footer {
     position: relative;
     top: 5px;
     left: 12px;
-}
+} */

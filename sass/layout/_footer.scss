@@ -1,0 +1,169 @@
+footer {
+    background-color: var(--footer-bacground-color);
+}
+
+.footer-div {
+    display: flex;
+}
+
+.footer-div-2 {
+    width: 250px;
+    margin-right: 30px;
+}
+
+.team-list-svg-2 {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.team-svg-2 {
+    fill: rgba(175, 177, 184, 1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.10);
+    transition: background-color 0.2s ease, fill 0.2s;
+}
+
+.team-svg-2:hover {
+    background-color: rgba(33, 150, 243, 1);
+    fill: rgba(255, 255, 255, 1);
+}
+
+.footer-logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    display: flex;
+}
+
+.footer-logo-first {
+    color: var(--first-logo-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+
+.footer-logo-second {
+    color: #FFF;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+
+.footer-adress {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+
+    display: flex;
+}
+
+.footer-nav {
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+
+    display: flex;
+    padding-bottom: 63px;
+}
+
+.footer-nav:nth-child(2) {
+    padding-bottom: 0;
+}
+
+.footer-div-3 {
+    margin-top: 60px;
+}
+
+.social-title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.footer-div-4 {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-lable {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    margin-top: 20px;
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.btn-form-footer {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    transition: 0.2s ease;
+}
+
+.btn-form-footer:hover {
+    background-color: #1665a7;
+}
+
+.footer-form-svg {
+    width: 24px;
+    height: 24px;
+    fill: #FFF;
+    position: relative;
+    top: 5px;
+    left: 12px;
+}

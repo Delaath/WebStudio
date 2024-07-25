@@ -1,0 +1,104 @@
+.team {
+    background-color: var(--main-second-background-color);
+    margin-top: 94px;
+}
+
+.team-title {
+    color: var(--cotent-title-color);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    text-align: center;
+
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+
+    padding-bottom: 94px;
+}
+
+.team-list-item {
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.team-img {
+    background: url(<path-to-image>), lightgray -86.437px -3.457px / 196.208% 136.002% no-repeat;
+    margin-bottom: 30px;
+}
+
+.team-list-title {
+    color: var(--cotent-title-color);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    text-align: center;
+
+    padding-bottom: 10px;
+}
+
+.team-list-subtitle {
+    color: var(--content-subtitle-color);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    text-align: center;
+
+    padding-bottom: 28px;
+}
+
+.team-list-svg {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.team-svg {
+    fill: rgba(175, 177, 184, 1);
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    padding: 5px;
+    transition: background-color 0.2s ease, fill 0.2s ease;
+
+}
+
+@keyframes team-svg{
+    0%{
+
+    }
+
+    25%{
+        transform: scale(0.80);
+        fill: rgb(38, 0, 175);
+    }
+
+    50%{
+        transform: translateY(-10px) perspective(600px) rotateY(360deg) scale(1.25);
+    }
+
+    100%{
+        
+    }
+}
+
+.team-svg:hover {
+    background-color: rgba(33, 150, 243, 1);
+    fill: rgba(255, 255, 255, 1);
+    animation-name: team-svg;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}

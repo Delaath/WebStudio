@@ -1,0 +1,116 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    font-family: Raleway;
+    letter-spacing: 0.78px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.first-logo {
+    color: var(--first-logo-color);
+}
+
+.second-logo {
+    color: var(--second-logo-color);
+}
+
+.header-list-nav {
+    display: flex;
+    gap: 50px;
+    margin-left: -125px;
+}
+
+.header-list-item-nav {
+    color: var(--header-text-color);
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    font-weight: 500;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.header-list-item-nav:nth-child(1) {
+    color: var(--link-hover-color);
+}
+
+.header-list-item-nav:nth-child(1)::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.header-list-item-nav::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    top: 45px;
+    position: absolute;
+}
+
+.header-list-item-nav:hover {
+    color: var(--link-hover-color);
+}
+
+.header-list-contact {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-svg {
+    position: relative;
+    top: 1px;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: rgba(117, 117, 117, 1);
+    transition: fill 0.2s ease;
+}
+
+.contact-svg:hover {
+    fill: #2196F3;
+}
+
+.contact-svg-2 {
+    position: relative;
+    top: 3px;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: rgba(117, 117, 117, 1);
+    transition: fill 0.2s ease;
+}
+
+.contact-svg-2:hover {
+    fill: #2196F3;
+}
+
+.header-contact-item {
+    color: var(--telephone-nav-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    transition: color 0.2s ease;
+}
+
+.header-contact-item:hover {
+    color: var(--link-hover-color);
+}

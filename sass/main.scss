@@ -1,10 +1,13 @@
 @import 'base/reset';
 @import 'base/container';
+@import 'base/variables';
+@import 'utils/placeholders';
+@import 'utils/mixin';
 @import 'base/colors';
 @import 'layout/header';
 @import 'layout/main';
 @import 'components/modal';
-@import 'layout/list';
+@import 'layout/info';
 @import 'layout/affairs';
 @import 'layout/team';
 @import 'layout/clients';

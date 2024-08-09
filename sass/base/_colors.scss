@@ -1,19 +1,17 @@
-:root {
-    --header-background-color: #FFFFFF;
-    --first-logo-color: #2196F3;
-    --second-logo-color: #000;
-    --header-text-color: #212121;
-    --link-hover-color: #2196F3;
-    --telephone-nav-color: #757575;
+$headerBackgroundColor: #FFFFFF;
+$firstLogoColor: #2196F3;
+$secondLogoColor: #000;
+$headerTextColor: #212121;
+$linkHoverColor: #2196F3;
+$telephoneNavColor: #757575;
 
-    --main-background-color: #212121;
-    --title-color: #FFFFFF;
-    --button-background-color: #2196F3;
-    --button-color: #FFFFFF;
-    --cotent-title-color: #212121;
-    --content-subtitle-color: #757575;
-    --main-second-background-color: #F5F4FA;
+$mainBackgroundColor: #212121;
+$titleColor: #FFFFFF;
+$buttonBackgroundColor: #2196F3;
+$buttonColor: #FFFFFF;
+$cotentTitleColor: #212121;
+$contentSubtitleColor: #757575;
+$mainSecondBackgroundColor: #F5F4FA;
 
-    --footer-bacground-color: #2F303A;
-    --footer-nav-color: #2F303A;
-}
+$footerBacgroundColor: #2F303A;
+$footerNavColor: #2F303A;

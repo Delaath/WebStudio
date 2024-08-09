@@ -1,0 +1,8 @@
+@mixin section-title () {
+    color: $cotentTitleColor;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin-bottom: 50px;
+}

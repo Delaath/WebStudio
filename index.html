@@ -22,7 +22,7 @@
         <a href="/" class="logo">
             <spa class="logo-1">Web</spa><span class="logo">Studio</span>
         </a>
-        <nav>
+        <nav class="header-nav">
             <ul class="header-list-nav">
                 <li class="header-list-nav-item"><a href="#">Студія</a></li>
                 <li class="header-list-nav-item"><a href="porfolio.html">Портфоліо</a></li>
@@ -38,11 +38,18 @@
                         <use href="./img/symbol-defs.svg#icon-smartphone"></use>
                     </svg>+380961111111</a></li>
         </ul>
+        <div class="header-burger" data-open-menu><span></span></div>
+        <div class="backdrop is-hidden" data-menu>
+            <div class="modal">
+                <div class="close-div"><button class="btn" data-close-menu><svg class="close-svg">
+                            <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                        </svg></button></div>
+            </div>
 
     </header>
 
     <main>
-        <section class="main-section ">
+        <section class="main-section">
             <h1 class="main-section-title container">Ефективні рішення для вашого бізнесу</h1>
             <button class="btn-open container" data-open-modal>Замовити послугу</button>
             <div class="backdrop is-hidden" data-modal>
@@ -299,7 +306,7 @@
         </div>
         </div>
     </footer>
-
+    <script src="menu.js"></script>
     <script src="modal.js"></script>
 </body>
 

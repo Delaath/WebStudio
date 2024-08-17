@@ -1,6 +1,13 @@
 .affairs {
     padding: 0;
 
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        display: block;
+    }
 
     &-title {
         @include section-title;

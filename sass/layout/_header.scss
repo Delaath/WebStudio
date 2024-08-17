@@ -1,25 +1,92 @@
-.logo {
-    font-family: Raleway;
-    letter-spacing: 0.78px;
-    font-size: 26px;
-    font-weight: 700;
-
-
-    &-1 {
-        color: $firstLogoColor;
-    }
-
-    &-2 {
-        color: $secondLogoColor;
-    }
-}
-
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    @media screen and (min-width: 320px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .header-nav {
+            display: none;
+        }
+
+        .header-list-contact {
+            display: none;
+        }
+
+        .header-burger {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+        .header-nav {
+            display: block;
+        }
+
+        .header-list-contact {
+            display: flex;
+        }
+
+        .header-burger {
+            display: none;
+        }
+    }
+
+    .logo {
+        font-family: Raleway;
+        letter-spacing: 0.78px;
+        font-size: 26px;
+        font-weight: 700;
+
+
+        &-1 {
+            color: $firstLogoColor;
+        }
+
+        &-2 {
+            color: $secondLogoColor;
+        }
+    }
+
+    &-list-nav {
+        display: flex;
+        gap: 50px;
+        margin-left: -125px;
+
+        &-item {
+            color: $headerTextColor;
+            font-size: 14px;
+            letter-spacing: 0.28px;
+            font-weight: 500;
+            transition: 0.2s ease;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                background: #2196F3;
+                opacity: 0;
+                transition: opacity 0.2s linear;
+                top: 45px;
+                position: absolute;
+            }
+
+            &:hover {
+                color: $linkHoverColor;
+            }
+        }
+
+    }
 
     &-list-contact {
         display: flex;
@@ -48,61 +115,60 @@
         }
     }
 
-}
-
-.header-list-nav {
-    display: flex;
-    gap: 50px;
-    margin-left: -125px;
-
-    &-item {
-        color: $headerTextColor;
-        font-size: 14px;
-        letter-spacing: 0.28px;
-        font-weight: 500;
-        transition: 0.2s ease;
+    .contact-svg {
         position: relative;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            background: #2196F3;
-            opacity: 0;
-            transition: opacity 0.2s linear;
-            top: 45px;
-            position: absolute;
-        }
-
-        &:hover {
-            color: $linkHoverColor;
-        }
-    }
-
-}
-
-.contact-svg {
-    position: relative;
-    top: 1px;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: rgba(117, 117, 117, 1);
-    transition: fill 0.2s ease;
-
-    &-2 {
-        position: relative;
-        top: 3px;
-        width: 10px;
-        height: 16px;
+        top: 1px;
+        width: 16px;
+        height: 12px;
         margin-right: 10px;
         fill: rgba(117, 117, 117, 1);
         transition: fill 0.2s ease;
+
+        &-2 {
+            position: relative;
+            top: 3px;
+            width: 10px;
+            height: 16px;
+            margin-right: 10px;
+            fill: rgba(117, 117, 117, 1);
+            transition: fill 0.2s ease;
+        }
+    }
+
+    &-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: #111238;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        & span {
+            background-color: #111238;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 9px;
+        }
     }
 }
-
 
 // .header-list-item-nav:nth-child(1) {
 //     color: $linkHoverColor;

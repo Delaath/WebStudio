@@ -1,25 +1,95 @@
 footer {
     background-color: $footerBacgroundColor;
+
+    @media screen and (min-width: 1240px) {
+        .footer-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            &-2 {
+                width: 250px;
+                margin-right: 30px;
+            }
+
+            &-3 {
+                margin-top: 60px;
+            }
+
+            &-4 {
+                display: flex;
+                margin-left: 93px;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
-.footer-div {
-    display: flex;
+@media screen and (min-width: 320px) {
 
-
-    &-2 {
-        width: 250px;
-        margin-right: 30px;
-    }
-
-    &-3 {
-        margin-top: 60px;
-    }
-
-    &-4 {
+    .footer-div {
         display: flex;
-        margin-left: 93px;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 30px;
+        flex-wrap: wrap;
+
+
+        &-2 {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        &-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        &-4 {
+            display: flex;
+            margin-left: 93px;
+            align-items: center;
+            margin: 0;
+        }
+    }
+
+    .footer-logo {
+        padding-left: 0;
+    }
+
+    .footer-list {
+        width: 216px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-title {
+        margin-left: 0;
+    }
+
+    .footer-lable {
+        align-items: center;
+    }
+
+    .footer-search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-input {
+        margin-bottom: 20px;
+    }
+
+    .btn-form-footer {
+        margin-bottom: 60px;
     }
 }
 
@@ -131,7 +201,7 @@ footer {
     border: none;
     transition: 0.2s ease;
 
-    
+
     &:hover {
         background-color: #1665a7;
     }

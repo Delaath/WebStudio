@@ -15,16 +15,26 @@
             letter-spacing: 0.84px;
             margin-bottom: 30px;
         }
+        
+        &-list{
+            flex-wrap: wrap;
+            padding-bottom: 60px;
+        }
 
     }
 
     @media screen and (min-width: 1024px) {
         margin-top: 94px;
+        flex-wrap: nowrap;
         .team-title {
             @include section-title;
             margin-bottom: 50px;
         }
 
+        &-list{
+            flex-wrap: nowrap;
+            padding-bottom: 94px;
+        }
     }
 
     &-list-svg-2 {
@@ -57,7 +67,6 @@
         justify-content: space-around;
         align-items: center;
         gap: 30px;
-        padding-bottom: 94px;
 
         &-item {
             border-radius: 0px 0px 4px 4px;

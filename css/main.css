@@ -731,10 +731,15 @@ textarea {
     letter-spacing: 0.84px;
     margin-bottom: 30px;
   }
+  .team-list {
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .team {
     margin-top: 94px;
+    flex-wrap: nowrap;
   }
   .team .team-title {
     color: #212121;
@@ -743,6 +748,10 @@ textarea {
     letter-spacing: 1.08px;
     text-align: center;
     margin-bottom: 50px;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+    padding-bottom: 94px;
   }
 }
 .team-list-svg-2 {
@@ -771,7 +780,6 @@ textarea {
   justify-content: space-around;
   align-items: center;
   gap: 30px;
-  padding-bottom: 94px;
 }
 .team .team-list-item {
   border-radius: 0px 0px 4px 4px;
@@ -830,7 +838,22 @@ textarea {
 .clients {
   background-color: #FFF;
 }
+@media screen and (min-width: 320px) {
+  .clients-div-svg {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .clients-div-svg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .clients-title {
+  padding-top: 60px;
+  padding-bottom: 30px;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
@@ -840,7 +863,6 @@ textarea {
 .clients-div-svg {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 94px;
 }
 @keyframes clients-svg {
@@ -877,24 +899,80 @@ textarea {
 footer {
   background-color: #2F303A;
 }
+@media screen and (min-width: 1240px) {
+  footer .footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  footer .footer-div-2 {
+    width: 250px;
+    margin-right: 30px;
+  }
+  footer .footer-div-3 {
+    margin-top: 60px;
+  }
+  footer .footer-div-4 {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
 
-.footer-div {
-  display: flex;
+@media screen and (min-width: 320px) {
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-div-2 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-div-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .footer-div-4 {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+    margin: 0;
+  }
+  .footer-logo {
+    padding-left: 0;
+  }
+  .footer-list {
+    width: 216px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-title {
+    margin-left: 0;
+  }
+  .footer-lable {
+    align-items: center;
+  }
+  .footer-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-input {
+    margin-bottom: 20px;
+  }
+  .btn-form-footer {
+    margin-bottom: 60px;
+  }
 }
-.footer-div-2 {
-  width: 250px;
-  margin-right: 30px;
-}
-.footer-div-3 {
-  margin-top: 60px;
-}
-.footer-div-4 {
-  display: flex;
-  margin-left: 93px;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 .footer-logo {
   padding-top: 60px;
   padding-bottom: 20px;

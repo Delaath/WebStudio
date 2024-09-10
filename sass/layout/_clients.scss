@@ -1,25 +1,22 @@
 .clients {
     background-color: #FFF;
 
-    @media screen and (min-width: 320px) {
-        &-div-svg {
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        &-div-svg {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    &-div-svg {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     &-title {
         padding-top: 60px;
         padding-bottom: 30px;
-        @include section-title;
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.84px;
     }
 
     &-div-svg {
@@ -62,6 +59,14 @@
             animation-iteration-count: 1;
             animation-direction: alternate;
             animation-timing-function: ease;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        &-div-svg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }

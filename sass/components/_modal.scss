@@ -13,12 +13,16 @@
     margin-top: 30px;
     justify-content: center;
     align-items: center;
-    width: 216px;
     height: 50px;
     transition: background-color 0.2s ease;
+    padding: 10px 24px;
 
     &:hover {
         background-color: #1566a8;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 200px;
     }
 }
 
@@ -55,11 +59,7 @@
     background: #FFF;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     transform: translate(-50%, -50%);
-
-    @media screen and (min-width: 320px) {
-        min-width: 400px;
-    }
-
+    min-width: 400px;
 }
 
 .close-div {
@@ -84,15 +84,20 @@
     stroke: rgba(0, 0, 0, 0.10);
     padding: 6px;
     transition: fill 0.1s ease;
+    position: absolute;
+    left: -195px;
+    top: -680px;
 
-    @media screen and (min-width: 320px) {
-        position: absolute;
-        left: -120px;
-    }
 
-    &:hover {
-        fill: #00000041;
-    }
+    // @media screen and (min-width: 1024px) {
+    //     position: absolute;
+    //     left: auto;
+    //     top: auto;
+    // }
+
+    // &:hover {
+    //     fill: #00000041;
+    // }
 }
 
 .modal-text {

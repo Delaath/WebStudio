@@ -39,7 +39,34 @@
         </ul>
         <div class="header-burger" data-open-menu><span></span></div>
         <div class="backdrop is-hidden" data-menu>
-            <div class="modal">
+            <div class="modal-2">
+                <div class="menu-nav">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="index.html"></a>Студія
+                        </li>
+                        <li class="menu-item">
+                            <a href="porfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Контакти</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-list-info">
+                        <li class="menu-item-1"><a href="tel:+38 096 111 11 11">+38 096 111 11 11</li></a>
+                        <li class="menu-item-2"><a href="mailto:info@devstudio.com">info@devstudio.com</li></a>
+                    </ul>
+                </div>
+
+                <ul class="menu-list-social">
+                    <li class="menu-item-social"><a href="#">Insgram</a></li>
+                    <li class="menu-item-social"><a href="#">Twitter</a></li>
+                    <li class="menu-item-social"><a href="#">Facebook</a></li>
+                    <li class="menu-item-social"><a href="#">LinkedIn</a></li>
+                </ul>
+
+
                 <div class="close-div"><button class="btn" data-close-menu><svg class="close-svg">
                             <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
                         </svg></button></div>
@@ -104,14 +131,20 @@
         <section class="info-section container">
             <ul class="items">
                 <li class="items-item">
-                    <h3 class="item-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="item-subtitle">
+                    <svg class="items-svg">
+                        <use href="./img/symbol-defs.svg#icon-antenna-1-1"></use>
+                    </svg>
+                    <h3 class="items-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="items-subtitle">
                         Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                     </p>
                 </li>
 
 
                 <li class="items-item">
+                    <svg class="items-svg">
+                        <use href="./img/symbol-defs.svg#icon-clock-1-1"></use>
+                    </svg>
                     <h3 class="item-title">ПУНКТУАЛЬНІСТЬ</h3>
                     <p class="item-subtitle">
                         Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
@@ -119,6 +152,9 @@
                 </li>
 
                 <li class="items-item">
+                    <svg class="items-svg">
+                        <use href="./img/symbol-defs.svg#icon-diagram"></use>
+                    </svg>
                     <h3 class="item-title">ПЛАНУВАННЯ</h3>
                     <p class="item-subtitle">
                         Так само консультація з широким активом значною мірою зумовлює.
@@ -126,6 +162,9 @@
                 </li>
 
                 <li class="items-item">
+                    <svg class="items-svg">
+                        <use href="./img/symbol-defs.svg#icon-astronaut"></use>
+                    </svg>
                     <h3 class="item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p class="item-subtitle">
                         Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -256,8 +295,8 @@
         </section>
     </main>
     <footer>
-        <div class="footer-div container">
-            <div class="footer-div-2">
+        <div class="footer-div">
+            <div class="footer-div-">
                 <a href="/" class="footer-logo "><span class="footer-logo-first">Web</span><span
                         class="footer-logo-second">Studio</span></a>
                 <ul class="footer-list container">
@@ -291,7 +330,8 @@
                 <form class="footer-form">
                     <label class="footer-lable">
                         Підпишіться на розсилку
-                        <div class="footer-search"><input type="email" name="email" class="footer-input" placeholder="email">
+                        <div class="footer-search"><input type="email" name="email" class="footer-input"
+                                placeholder="email">
                     </label>
                     <button type="submit" class="btn-form-footer">Підписатися<svg class="footer-form-svg">
                             <use href="./img/symbol-defs.svg#icon-icon-send"></use>

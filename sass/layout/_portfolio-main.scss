@@ -1,6 +1,7 @@
 .nav-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
     margin-top: 94px;
@@ -12,7 +13,7 @@
         border-radius: 4px;
         text-align: center;
         font-family: Roboto;
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 26px;
@@ -32,6 +33,27 @@
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
         }
     }
+
+    @media screen and (min-width: 480px) {
+        .nav-item{
+            padding: 6px 13px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        justify-content: center;
+        padding: 6px 17px;
+
+        .main-item{
+            width: 48%;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .main-item{
+            width: 100%;
+        }
+    }
 }
 
 .main {
@@ -41,6 +63,7 @@
     &-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin-top: 50px;
         gap: 18px;
         padding: 0;
@@ -49,6 +72,7 @@
     &-item {
         border: 1px solid #EEE;
         transition: 0.2s ease;
+        width: 300px;
 
 
         &:hover {
@@ -95,11 +119,13 @@
 
 .img {
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .box {
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 .main-item:hover .overlay {
@@ -118,15 +144,16 @@
 
 
     &-title {
-        width: 322px;
-        color: #FFF;
+        width: 95%;
+        color: #fff;
         font-family: Roboto;
-        font-size: 18px;
+        font-size: 17px;
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
-        letter-spacing: 0.54px;
-        padding: 63px 24px;
+        letter-spacing: .54px;
+        padding-right: 20px;
+        padding-top: 20px;
     }
 }
 

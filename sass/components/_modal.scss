@@ -24,6 +24,9 @@
     @media screen and (min-width: 480px) {
         width: 200px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 200px;
+    }
 }
 
 .backdrop {
@@ -60,233 +63,221 @@
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     transform: translate(-50%, -50%);
     min-width: 400px;
-}
-
-.close-div {
-    position: relative;
-}
-
-.btn {
-    position: absolute;
-    left: 440px;
-    border: none;
-    background-color: #FFF;
-    top: 9px;
-}
-
-.close-svg {
-    width: 30px;
-    height: 30px;
-    fill: #000000;
-    border: 1px rgba(0, 0, 0, 0.10) solid;
-    border-radius: 50%;
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.10);
-    padding: 6px;
-    transition: fill 0.1s ease;
-    position: absolute;
-    left: -195px;
-    top: -680px;
-
-
-    // @media screen and (min-width: 1024px) {
-    //     position: absolute;
-    //     left: auto;
-    //     top: auto;
-    // }
-
-    // &:hover {
-    //     fill: #00000041;
-    // }
-}
-
-.modal-text {
-    color: #212121;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    margin-top: 40px;
-    margin-bottom: 12px;
-}
-
-.modal-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.modal-lable-text {
-    display: flex;
-    flex-direction: column;
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    transition: 0.3s ease;
-}
-
-.modal-lable-text:focus-within {
-    fill: rgba(33, 150, 243, 1);
-}
-
-.modal-lable-namber {
-    display: flex;
-    flex-direction: column;
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    transition: 0.3s ease;
-}
-
-.modal-lable-namber:focus-within {
-    fill: rgba(33, 150, 243, 1);
-}
-
-.modal-lable-mail {
-    display: flex;
-    flex-direction: column;
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    transition: 0.3s ease;
-}
-
-.modal-lable-mail:focus-within {
-    fill: rgba(33, 150, 243, 1);
-}
-
-.modal-lable-area {
-    display: flex;
-    flex-direction: column;
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-}
-
-.modal-lable-checkbox {
-    display: flex;
-    justify-content: center;
-    color: #757575;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 5px;
-    letter-spacing: 0.42px;
-}
-
-.input {
-    width: 448px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
-    margin-top: 4px;
-    padding-left: 35px;
-    color: #000000;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-
-
-    &-checkbox {
-        margin-right: 7px;
+    
+    .close-div {
+        position: relative;
     }
-
-
-    &-svg-tel {
-        width: 20px;
-        height: 20px;
+    
+    .btn {
         position: absolute;
-        top: 173px;
-        left: 50px;
+        left: 440px;
+        border: none;
+        background-color: #FFF;
+        top: 9px;
     }
-
-    &-svg {
-        width: 20px;
-        height: 20px;
+    
+    .close-svg {
+        width: 30px;
+        height: 30px;
+        fill: #000000;
+        border: 1px rgba(0, 0, 0, 0.10) solid;
+        border-radius: 50%;
+        stroke-width: 1px;
+        stroke: rgba(0, 0, 0, 0.10);
+        padding: 6px;
+        transition: fill 0.1s ease;
         position: absolute;
-        top: 105px;
-        left: 50px;
+    
     }
-
-    &-svg-email {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        top: 241px;
-        left: 50px;
+    
+    .modal-text {
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        margin-top: 40px;
+        margin-bottom: 12px;
     }
-
-}
-
-.link-checkbox {
-    color: #2196F3;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-    text-decoration-line: underline;
-}
-
-.btn-form {
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-    width: 200px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-top: 30px;
-    margin-left: 26%;
-    border: none;
-}
-
-textarea {
-    resize: none;
-    margin-top: 12px;
-    width: 448px;
-    height: 120px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
-    margin-top: 4px;
-    padding: 12px;
-    color: #000000;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
+    
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .modal-lable-text {
+        display: flex;
+        flex-direction: column;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        transition: 0.3s ease;
+    }
+    
+    .modal-lable-text:focus-within {
+        fill: rgba(33, 150, 243, 1);
+    }
+    
+    .modal-lable-namber {
+        display: flex;
+        flex-direction: column;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        transition: 0.3s ease;
+    }
+    
+    .modal-lable-namber:focus-within {
+        fill: rgba(33, 150, 243, 1);
+    }
+    
+    .modal-lable-mail {
+        display: flex;
+        flex-direction: column;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        transition: 0.3s ease;
+    }
+    
+    .modal-lable-mail:focus-within {
+        fill: rgba(33, 150, 243, 1);
+    }
+    
+    .modal-lable-area {
+        display: flex;
+        flex-direction: column;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
+    
+    .modal-lable-checkbox {
+        display: flex;
+        justify-content: center;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 5px;
+        letter-spacing: 0.42px;
+    }
+    
+    .input {
+        width: 448px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+        margin-top: 4px;
+        padding-left: 35px;
+        color: #000000;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    
+    
+        &-checkbox {
+            margin-right: 7px;
+        }
+    
+    
+        &-svg-tel {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 173px;
+            left: 50px;
+        }
+    
+        &-svg {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 105px;
+            left: 50px;
+        }
+    
+        &-svg-email {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 241px;
+            left: 50px;
+        }
+    
+    }
+    
+    .link-checkbox {
+        color: #2196F3;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        text-decoration-line: underline;
+    }
+    
+    .btn-form {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        width: 200px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        margin-top: 30px;
+        margin-left: 26%;
+        border: none;
+    }
+    
+    textarea {
+        resize: none;
+        margin-top: 12px;
+        width: 448px;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+        margin-top: 4px;
+        padding: 12px;
+        color: #000000;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
 }

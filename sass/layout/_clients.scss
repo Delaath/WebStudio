@@ -4,6 +4,9 @@
     &-div-svg {
         justify-content: space-evenly;
         flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        margin-bottom: 94px;
     }
 
     &-title {
@@ -17,12 +20,6 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.84px;
-    }
-
-    &-div-svg {
-        display: flex;
-        align-items: center;
-        margin-bottom: 94px;
     }
 
     @keyframes clients-svg {
@@ -62,11 +59,28 @@
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
+        &-svg {
+            width: 185px;
+        }
+
         &-div-svg {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            gap: 30px;
         }
     }
+
+    @media screen and (min-width: 1200px) {
+        &-div-svg{
+            gap: 12px;
+        }
+    }
+
+    // @media screen and (min-width: 1024px) {
+    //     &-div-svg {
+    //         display: flex;
+    //         justify-content: space-between;
+    //         align-items: center;
+    //     }
+    // }
 }

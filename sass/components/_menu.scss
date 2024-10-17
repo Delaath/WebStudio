@@ -1,6 +1,6 @@
 .modal-2 {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50%;
     min-width: 320px;
     min-height: 581px;
@@ -33,4 +33,80 @@
         gap: 35px;
         margin-bottom: 64px;
     }
+
+    .menu-item {
+        color: #212121;
+        font-family: Roboto;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.8px;
+
+        &:hover {
+            color: #2196F3;
+        }
+
+    }
+
+    .menu-item-1 {
+        color: #757575;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+
+        &:hover {
+            color: #2196F3;
+        }
+    }
+    .menu-item-2 {
+        color: #757575;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+
+        &:hover {
+            color: #2196F3;
+        }
+    }
+
+
+    .menu-list-social {
+        display: flex;
+        gap: 15px;
+    }
+
+    .menu-item-social {
+        color: #2196F3;
+    }
+
+    .close-svg-2{
+            width: 30px;
+            height: 30px;
+            fill: #000000;
+            border: 1px rgba(0, 0, 0, 0.10) solid;
+            border-radius: 50%;
+            stroke-width: 1px;
+            stroke: rgba(0, 0, 0, 0.10);
+            padding: 6px;
+            transition: fill 0.1s ease;
+            position: absolute;
+            left: -158px;
+            top: -676px;
+    }
+
+    .btn2 {
+        position: absolute;
+        left: 276px;
+        border: none;
+        background-color: #ff0000;
+        top: -670px;
+    }
+
 }
